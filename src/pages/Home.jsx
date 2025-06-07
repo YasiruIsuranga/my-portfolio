@@ -4,10 +4,11 @@ import { StarBackground } from "@/components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
-import { ProjectorIcon } from "lucide-react";
+import { ProjectsSection } from "../components/ProjectsSection";
+import { ContactSection } from "../components/ContactSection";
 
 export const Home = () => {
-    return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    return <div className="min-h-screen bg-background text-foreground overflow-hidden" style={{ width: "100vw", maxWidth: "100%" }}>
         {/* Theme */}
         <ThemeToggle />
         {/* Background Effects */}
@@ -15,11 +16,12 @@ export const Home = () => {
         {/* Navbar */}
         <Navbar />
         {/* Main Content */}
-        <main>
+        <main className="container">
             <HeroSection />
             <AboutSection />
             <SkillsSection />
-            <ProjectorIcon />
+            <ProjectsSection />
+            <ContactSection />
         </main>
         {/* Footer */}
     </div>
