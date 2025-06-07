@@ -7,10 +7,10 @@ import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 
-export const Home = () => {
+export const Home = ({toggleTheme}) => {
     return <div className="min-h-screen bg-background text-foreground overflow-hidden" style={{ width: "100vw", maxWidth: "100%" }}>
         {/* Theme */}
-        <ThemeToggle />
+        <ThemeToggle toggleTheme={toggleTheme}/>
         {/* Background Effects */}
         <StarBackground />
         {/* Navbar */}
