@@ -66,25 +66,25 @@
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-
     --card: 0 0% 100%;
-
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
-
-    --border: 214 32% 91%
+    --border: 214 32% 91%;
+    --muted-foreground: 222 47% 45%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
   }
 
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
-    
     --card: 222 47% 8%;
-
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
-
-    --border: 217 33% 20%
+    --border: 217 33% 20%;
+    --muted-foreground: 213 31% 70%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 213 31% 91%;
   }
 
   * {
@@ -100,6 +100,8 @@
     font-feature-settings: "ring" 1, "call" 1;
   }
 }
+
+
 
 @utility container {
   margin-inline: auto;

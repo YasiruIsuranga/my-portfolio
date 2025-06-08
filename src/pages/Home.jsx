@@ -6,11 +6,12 @@ import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
 
-export const Home = ({toggleTheme}) => {
-    return <div className="min-h-screen bg-background text-foreground overflow-hidden" style={{ width: "100vw", maxWidth: "100%" }}>
+export const Home = () => {
+    return <div className="min-h-screen bg-background text-foreground overflow-x-hidden" style={{ width: "100vw", maxWidth: "100%",}}>
         {/* Theme */}
-        <ThemeToggle toggleTheme={toggleTheme}/>
+        <ThemeToggle />
         {/* Background Effects */}
         <StarBackground />
         {/* Navbar */}
@@ -24,5 +25,6 @@ export const Home = ({toggleTheme}) => {
             <ContactSection />
         </main>
         {/* Footer */}
+        <Footer />
     </div>
 }
